@@ -6,6 +6,7 @@ using Autofac.Extensions.DependencyInjection;
 using Hellang.Middleware.ProblemDetails;
 using MicroserviceLibrary.Api.Configurations.Extensions;
 using MicroserviceLibrary.Api.Utils;
+using MicroserviceLibrary.Infrastructure.Databases;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -32,6 +33,7 @@ namespace PlainClasses.Services.Platoon.Api
         {
             services.AddSqlConfiguration(Configuration, Consts.DbConfigurationSection);
             services.AddDbContext<PlatoonContext>();
+            services.AddScoped(typeof(IApplicationDbContext), typeof(PlatoonContext)); 
             
             services.AddControllers();
             services.AddSwagger();
