@@ -8,5 +8,16 @@
     <ProjectReference Include="..\PlainClasses.Services.Platoon.Domain\PlainClasses.Services.Platoon.Domain.csproj" />
     <ProjectReference Include="..\PlainClasses.Services.Platoon.Application\PlainClasses.Services.Platoon.Application.csproj" />
   </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.14" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.14" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Reference Include="MicroserviceLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\PlainClasses.Services.Platoon.Domain\bin\Debug\netcoreapp3.1\MicroserviceLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
 
 </Project>

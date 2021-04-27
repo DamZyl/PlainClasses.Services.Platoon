@@ -9,4 +9,25 @@
     <ProjectReference Include="..\PlainClasses.Services.Platoon.Application\PlainClasses.Services.Platoon.Application.csproj" />
   </ItemGroup>
   
+  <ItemGroup>
+    <Folder Include="Controllers" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Reference Include="MicroserviceLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\PlainClasses.Services.Platoon.Domain\bin\Debug\netcoreapp3.1\MicroserviceLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.2.0" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.1.0" />
+    <PackageReference Include="Hellang.Middleware.ProblemDetails" Version="5.4.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.14">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.3" />
+  </ItemGroup>
+  
 </Project>
