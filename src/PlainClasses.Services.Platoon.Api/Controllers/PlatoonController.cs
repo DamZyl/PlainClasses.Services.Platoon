@@ -13,9 +13,9 @@ using PlainClasses.Services.Platoon.Application.Commands.UpdatePlatoon;
 using PlainClasses.Services.Platoon.Application.Queries.GetPlatoon;
 using PlainClasses.Services.Platoon.Application.Queries.GetPlatoons;
 
-namespace PlainClasses.Api.Platoons
+namespace PlainClasses.Services.Platoon.Api.Controllers
 {
-    [Route("api/platoons")]
+    [Route("api/[controller]")]
     [ApiController]
     public class PlatoonController : Controller
     {
